@@ -11,6 +11,11 @@ const app = express();
 app.use(cors())
 app.use(express.json());
 connectDB()
+
+app.get("/", (req, res) => {
+  res.send("Backend is Live and Running! 🚀");
+});
+
 app.use("/api/auth", authRouter);
 
 
