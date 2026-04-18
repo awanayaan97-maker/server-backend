@@ -12,7 +12,7 @@ app.use(cors());
 app.options("*", cors());
 
 app.use(express.json());
-connectDB()
+// connectDB()
 
 app.get("/", (req, res) => {
   res.send("Backend is Live and Running! 🚀");
