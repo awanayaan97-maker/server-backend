@@ -9,7 +9,7 @@ const app = express();
 
 
 app.use(cors({
-    origin: "https://extraordinary-moonbeam-cae328.netlify.app/",
+    origin: "https://extraordinary-moonbeam-cae328.netlify.app",
     credentials: true,
     methods: ["GET", "POST", "PUT", "DELETE"],
     allowedHeaders: ["Content-Type", "Authorization"]
