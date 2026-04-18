@@ -31,9 +31,6 @@ app.use(function(err, req, res, next){
     
 })
 
-app.listen(process.env.PORT, function(){
-    console.log("Server is Working Fine");
-})
-
+module.exports = app
 
 
