@@ -9,10 +9,9 @@ const app = express();
 
 
 app.use(cors());
-app.options("*", cors());
 
 app.use(express.json());
-// connectDB()
+connectDB()
 
 app.get("/", (req, res) => {
   res.send("Backend is Live and Running! 🚀");
@@ -32,5 +31,4 @@ app.use(function(err, req, res, next){
 })
 
 module.exports = app
-
 
